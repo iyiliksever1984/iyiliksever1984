@@ -1,0 +1,273 @@
+/* ============================================================
+   components.css — Cartes, typographie de contenu, texte arabe
+   ============================================================ */
+
+/* === CARTE — Base === */
+.card {
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--c-surface-soft);
+  overflow-x: hidden;
+}
+
+.card-inner {
+  max-width: var(--w-page);
+  margin-inline: auto;
+  padding: var(--sp-xl) var(--sp-lg);
+}
+
+/* === CARTE — Article === */
+.card-article .card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+  justify-content: center;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+  align-items: center;
+  text-align: center;
+}
+
+.card-titre {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--c-text);
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-titre);
+}
+
+.card-titre-ar {
+  font-size: clamp(1.75rem, 1.45rem + 1.45vw, 2.3rem);
+  color: var(--c-text);
+  direction: rtl;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.card-sous-titre {
+  font-size: var(--fs-base);
+  color: var(--c-text);
+  line-height: var(--lh-body);
+}
+
+/* === BLOC BILINGUE FR + AR === */
+.bloc-bilingue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(28ch, 100%), 1fr));
+  gap: var(--sp-lg);
+  align-items: start;
+}
+
+.corps-fr {
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--c-text);
+}
+
+.corps-fr p {
+  margin-block-end: var(--sp-md);
+  text-align: justify;
+  hyphens: auto;
+}
+
+.corps-fr p:last-child {
+  margin-block-end: 0;
+}
+
+/* Paragraphes arabes intégrés dans le corps d'un article */
+.corps-fr p.texte-arabe {
+  font-family: var(--font-arabe);
+  font-size: var(--fs-arabe);
+  line-height: 2;
+  direction: rtl;
+  text-align: right;
+  hyphens: none;
+}
+
+.corps-ar {
+  font-family: var(--font-arabe);
+  font-size: var(--fs-arabe);
+  line-height: 2;
+  direction: rtl;
+  text-align: right;
+}
+
+/* === LETTRINE === */
+.drop-cap {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  color: var(--c-accent);
+  float: left;
+  line-height: 0.85;
+  margin-inline-end: var(--sp-sm);
+  margin-block-start: var(--sp-2xs);
+}
+
+/* === EFFET MANUSCRIT === */
+.ms-char {
+  display: inline;
+  vertical-align: var(--ms-shift, 0);
+}
+
+/* === CARTE — Citation === */
+.card-citation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-citation .card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-xl);
+  text-align: center;
+}
+
+.citation-arabe {
+  font-family: var(--font-arabe);
+  font-size: var(--fs-arabe);
+  line-height: 2;
+  color: var(--c-text);
+  font-style: normal;
+  direction: rtl;
+  letter-spacing: 0;
+}
+
+.citation-traduction {
+  font-size: var(--fs-base);
+  color: var(--c-text);
+  line-height: var(--lh-body);
+}
+
+/* === CARTE — Livre === */
+.card-livre .card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-lg);
+  justify-content: center;
+}
+
+.livre-hero {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+  gap: var(--sp-lg);
+  align-items: center;
+}
+
+.livre-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+  min-width: 0;
+}
+
+.livre-couverture {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.livre-couverture img {
+  max-height: min(42dvh, 420px);
+  width: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px var(--c-shadow);
+}
+
+.livre-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-xs);
+  align-items: center;
+  text-align: center;
+}
+
+.livre-titre {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--c-text);
+  letter-spacing: var(--ls-titre);
+}
+
+.livre-auteur {
+  font-size: var(--fs-base);
+  color: var(--c-text);
+  font-weight: var(--fw-semibold);
+}
+
+.livre-annee {
+  font-size: var(--fs-base);
+  color: var(--c-text);
+}
+
+.livre-biographie {
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--c-text);
+}
+
+.livre-extraits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+}
+
+.livre-extrait {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+  padding-block: var(--sp-sm);
+}
+
+.extrait-ar {
+  font-family: var(--font-arabe);
+  font-size: var(--fs-arabe);
+  line-height: 2;
+  font-style: normal;
+  color: var(--c-text);
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0;
+}
+
+.extrait-fr {
+  font-size: var(--fs-base);
+  color: var(--c-text);
+  line-height: var(--lh-body);
+}
+
+/* === TEXTE ARABE (générique) === */
+.texte-arabe {
+  font-family: var(--font-arabe);
+  font-size: var(--fs-arabe);
+  direction: rtl;
+  text-align: right;
+  line-height: 2;
+  letter-spacing: 0;
+  word-spacing: 0.05em;
+}
+
+@media (max-width: 760px) {
+  .livre-hero {
+    grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+    gap: var(--sp-md);
+  }
+
+  .livre-couverture {
+    align-self: start;
+  }
+
+  .livre-couverture img {
+    max-height: 32dvh;
+  }
+
+  .livre-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}

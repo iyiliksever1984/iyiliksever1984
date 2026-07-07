@@ -4,11 +4,29 @@
    utilisent ces variables sans les redéfinir.
    ============================================================ */
 
+/* === POLICES LOCALES === */
+@font-face {
+  font-family: 'Amiri';
+  src: url('../assets/fonts/amiri-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('../assets/fonts/amiri-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* === TOKENS — Mode clair (défaut) === */
 :root {
   /* Typographie — familles */
-  --font-body: "Georgia", "Times New Roman", serif;
-  --font-ui:   "Arial", Helvetica, sans-serif;
+  --font-body:  "Georgia", "Times New Roman", serif;
+  --font-arabe: 'Amiri', 'Traditional Arabic', 'Arabic Typesetting', serif;
+  --font-ui:    "Arial", Helvetica, sans-serif;
 
   /* Typographie — graisses */
   --fw-regular:  400;
@@ -25,13 +43,14 @@
   --lh-note:  1.45;
 
   /* Typographie — tailles fluides */
-  --fs-xs:   clamp(0.78rem, 0.76rem + 0.15vw, 0.88rem);
-  --fs-sm:   clamp(0.9rem,  0.86rem + 0.20vw, 1rem);
-  --fs-base: clamp(1rem,    0.96rem + 0.25vw, 1.08rem);
-  --fs-lg:   clamp(1.15rem, 1.06rem + 0.45vw, 1.35rem);
-  --fs-h3:   clamp(1.3rem,  1.12rem + 0.90vw, 1.7rem);
-  --fs-h2:   clamp(1.6rem,  1.25rem + 1.20vw, 2.2rem);
-  --fs-h1:   clamp(2rem,    1.55rem + 2.00vw, 3rem);
+  --fs-xs:    clamp(0.82rem, 0.79rem + 0.15vw, 0.92rem);
+  --fs-sm:    clamp(0.95rem, 0.9rem  + 0.25vw, 1.05rem);
+  --fs-base:  clamp(1.1rem,  1rem   + 0.5vw,  1.25rem);
+  --fs-arabe: clamp(1.32rem, 1.2rem + 0.6vw,  1.5rem); /* compensation optique Amiri vs Georgia */
+  --fs-lg:    clamp(1.25rem, 1.1rem  + 0.7vw,  1.5rem);
+  --fs-h3:    clamp(1.5rem,  1.25rem + 1.25vw, 2rem);
+  --fs-h2:    clamp(1.85rem, 1.45rem + 1.75vw, 2.5rem);
+  --fs-h1:    clamp(2.25rem, 1.75rem + 2.5vw,  3.5rem);
 
   /* Couleurs — thème clair */
   --c-bg:           #f5f1e8;
@@ -106,7 +125,9 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
   line-height: var(--lh-body);
+  letter-spacing: var(--ls-titre);
   color: var(--c-text);
   background: var(--c-bg);
   overflow-x: hidden;
