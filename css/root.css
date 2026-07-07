@@ -1,0 +1,178 @@
+/* ============================================================
+   root.css — Tokens, Reset, Base
+   Point d'entrée unique. Tous les autres fichiers CSS
+   utilisent ces variables sans les redéfinir.
+   ============================================================ */
+
+/* === TOKENS — Mode clair (défaut) === */
+:root {
+  /* Typographie — familles */
+  --font-body: "Georgia", "Times New Roman", serif;
+  --font-ui:   "Arial", Helvetica, sans-serif;
+
+  /* Typographie — graisses */
+  --fw-regular:  400;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* Typographie — interlettrage */
+  --ls-titre: -0.025em;
+
+  /* Typographie — interlignes */
+  --lh-tight: 1.15;
+  --lh-title: 1.2;
+  --lh-body:  1.55;
+  --lh-note:  1.45;
+
+  /* Typographie — tailles fluides */
+  --fs-xs:   clamp(0.78rem, 0.76rem + 0.15vw, 0.88rem);
+  --fs-sm:   clamp(0.9rem,  0.86rem + 0.20vw, 1rem);
+  --fs-base: clamp(1rem,    0.96rem + 0.25vw, 1.08rem);
+  --fs-lg:   clamp(1.15rem, 1.06rem + 0.45vw, 1.35rem);
+  --fs-h3:   clamp(1.3rem,  1.12rem + 0.90vw, 1.7rem);
+  --fs-h2:   clamp(1.6rem,  1.25rem + 1.20vw, 2.2rem);
+  --fs-h1:   clamp(2rem,    1.55rem + 2.00vw, 3rem);
+
+  /* Couleurs — thème clair */
+  --c-bg:           #f5f1e8;
+  --c-surface:      #efe8db;
+  --c-surface-soft: #f8f4ec;
+  --c-text:         #1f1b17;
+  --c-text-muted:   #5e554d;
+  --c-accent:       #8f2f23;
+  --c-accent-strong:#6f2118;
+  --c-link:         #1f4a6a;
+  --c-shadow:       rgba(31, 27, 23, 0.08);
+
+  /* Espacements fluides */
+  --sp-2xs: clamp(0.125rem, 0.11rem + 0.08vw, 0.2rem);
+  --sp-xs:  clamp(0.25rem,  0.22rem + 0.12vw, 0.38rem);
+  --sp-sm:  clamp(0.45rem,  0.38rem + 0.20vw, 0.65rem);
+  --sp-md:  clamp(0.7rem,   0.58rem + 0.35vw, 1rem);
+  --sp-lg:  clamp(1rem,     0.82rem + 0.55vw, 1.45rem);
+  --sp-xl:  clamp(1.4rem,   1.10rem + 0.90vw, 2rem);
+
+  /* Rayons */
+  --radius-sm: 0.35rem;
+  --radius-md: 0.6rem;
+
+  /* Largeurs */
+  --w-text: 62ch;
+  --w-page: min(1180px, 94vw);
+
+  /* Sidebar */
+  --w-sidebar: 280px;
+
+  /* Z-index */
+  --z-base:    1;
+  --z-menu:    100;
+  --z-fab:     200;
+  --z-overlay: 300;
+  --z-modal:   400;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* === TOKENS — Mode sombre === */
+[data-theme="dark"] {
+  --c-bg:           #0f0e0c;
+  --c-surface:      #1a1815;
+  --c-surface-soft: #211f1b;
+  --c-text:         #e8e0d0;
+  --c-text-muted:   #9a9088;
+  --c-accent:       #c84040;
+  --c-accent-strong:#d45050;
+  --c-link:         #6090c0;
+  --c-shadow:       rgba(0, 0, 0, 0.4);
+}
+
+/* === RESET === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  hanging-punctuation: first last;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--c-text);
+  background: var(--c-bg);
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* === BASE — Typographie === */
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: var(--lh-title);
+  font-weight: var(--fw-bold);
+  color: var(--c-text);
+  text-wrap: balance;
+  letter-spacing: var(--ls-titre);
+}
+
+p, ul, ol, blockquote, figure, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: var(--c-link);
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+  color: var(--c-text);
+}
+
+/* === BASE — Médias === */
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === BASE — Interactions === */
+button {
+  cursor: pointer;
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+input, textarea, select {
+  font: inherit;
+}

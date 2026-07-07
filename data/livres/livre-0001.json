@@ -1,0 +1,25 @@
+{
+  "id": "livre-0001",
+  "type": "livre",
+  "categorie": "Livre",
+  "titre": "La supériorité des chiens sur beaucoup de ceux qui portent des vêtements",
+  "auteur": "Imam Abou Bakr ibn Khalaf al-Marzuban",
+  "annee": "mort en l'an 309 de l'hégire",
+  "image_couverture": "./assets/images/livres/0001.jpg",
+  "resume_fr": "Une œuvre classique mettant en contraste la loyauté naturelle de l'animal face à l'hypocrisie et la trahison que l'on peut trouver chez certains hommes.",
+  "biographie_auteur_fr": "Mohammad ibn Khalaf ibn al-Marzuban ibn Bassam (Abû Bakr al-Mahwallî), décédé en 309 H (921 ap. J.-C.). Historien, traducteur et érudit en littérature. Il était originaire d'al-Mahwal, un village à l'ouest de Bagdad. Il a traduit plus de cinquante livres persans et est l'auteur de nombreux ouvrages.",
+  "extraits": [
+    {
+      "texte_ar": "قال إني أراه أوفى ذمامًا ❁ من كثيرٍ عرفتُ في الإخوان<br>وأمينَ المغيبِ يلقى بوجهٍ ❁ ولقومٍ من الورى وجهان",
+      "texte_fr": "« Le chien est plus fidèle à ses engagements que beaucoup de ceux que j'ai connus parmi mes \"frères\" ... digne de confiance en ton absence, il t'accueille avec un seul visage, alors que bien des gens en ont deux (ils sont hypocrites). »"
+    },
+    {
+      "texte_ar": "حضرت بعض الأعراب الوفاة وكلبٌ في جانب خيمته فقال لأكبر ولده:<br>أوصيكَ خيراً بهِ لأنَّ لهُ ❁ صنائعاً لا أزال أحمَدُها<br>يدلُّ ضيفي عليَّ في غسق الليلِ ❁ إذا النـارُ نامَ مُوقِدُها",
+      "texte_fr": "La mort se présenta à un bédouin alors qu'un chien se trouvait à côté de sa tente. Il dit à son fils aîné : « Je te recommande de bien le traiter, car il accomplit des bienfaits que je ne cesse de louer : il guide mon invité vers moi dans l'obscurité de la nuit, quand le feu s'éteint. »"
+    },
+    {
+      "texte_ar": "قال: كان للأعمش كلبٌ يتبعه في الطريق إذا مشى حتى يرجع. فقيل له في ذلك، فقال: رأيت صبياناً يضربونه ففرقتُ بينهم وبينه فعرف ذلك لي فشكرَهُ. فإذا رآني بصبص لي وتتبَّعني.",
+      "texte_fr": "L'Imam Al-A'mash avait un chien qui le suivait sur le chemin lorsqu'il sortait, jusqu'à son retour. On l'interrogea à ce sujet et il répondit : « J'ai vu des enfants le frapper un jour, alors je me suis interposé pour le défendre. Il l'a reconnu et m'en fut reconnaissant. Désormais, dès qu'il me voit, il remue la queue et me suit. »"
+    }
+  ]
+}

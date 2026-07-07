@@ -1,0 +1,68 @@
+/* ============================================================
+   layout.css — Structure de page
+   Grille principale, flux de cartes, conteneurs de largeur.
+   ============================================================ */
+
+/* === BODY — Grille page (mobile-first : 1 colonne) === */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  min-height: 100dvh;
+}
+
+/* La sidebar est hors flux sur mobile */
+.menu-sidebar {
+  display: none;
+}
+
+/* === FLUX — Conteneur des cartes === */
+.flux {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+/* === DESKTOP — Sidebar visible, grille à 2 colonnes === */
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: var(--w-sidebar) 1fr;
+  }
+
+  .menu-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    overflow-y: auto;
+    background: var(--c-surface);
+    padding: var(--sp-lg) var(--sp-md);
+  }
+}
+
+/* === LARGEURS DE CONTENU — Colonnes internes === */
+.layout-page {
+  width: var(--w-page);
+  margin-inline: auto;
+}
+
+.layout-text {
+  width: min(var(--w-text), 100%);
+  margin-inline: auto;
+}
+
+.layout-full {
+  width: 100%;
+}
+
+/* === COLONNE 3 ZONES (texte + marges latérales) === */
+.layout-3col {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    min(var(--w-text), 100%)
+    minmax(0, 1fr);
+  gap: 0 var(--sp-lg);
+  width: var(--w-page);
+  margin-inline: auto;
+}

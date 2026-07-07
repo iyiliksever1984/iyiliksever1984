@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Articles islamiques, citations et présentations de livres — Orhan Oğlu">
+  <meta name="theme-color" content="#8f2f23" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#c84040" media="(prefers-color-scheme: dark)">
+  <title>Orhan Oğlu</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    (function() {
+      const stored = localStorage.getItem('theme');
+      const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', stored || system);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+  <aside class="menu-sidebar" aria-label="Menu principal"></aside>
+
+  <main class="flux" id="flux"></main>
+
+  <button
+    class="btn-hamburger"
+    id="btn-hamburger"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="menu-drawer"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav
+    class="menu-drawer"
+    id="menu-drawer"
+    aria-label="Menu principal"
+    aria-hidden="true"
+  ></nav>
+
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+
+  <div
+    class="fab"
+    id="fab"
+    role="group"
+    aria-label="Actions rapides"
+  ></div>
+
+  <div
+    class="search-overlay"
+    id="search-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Recherche"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="about-modal"
+    id="about-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="À propos d'Orhan Oğlu"
+    aria-hidden="true"
+  ></div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Orhan Oğlu",
+  "short_name": "Orhan Oğlu",
+  "description": "Articles islamiques, citations et présentations de livres",
+  "lang": "fr",
+  "start_url": "/iyiliksever1984/",
+  "scope": "/iyiliksever1984/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#8f2f23",
+  "background_color": "#f5f1e8"
+}
