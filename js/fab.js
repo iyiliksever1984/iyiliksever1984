@@ -29,10 +29,10 @@ const initFab = (displayCardFn) => {
         }
         
         html += `
-          <div class="list-item" data-id="${card.id}">
+          <button class="list-item" data-id="${card.id}">
             <div class="list-item-title">${title}</div>
             <div class="list-item-type">${card.type}</div>
-          </div>
+          </button>
         `;
       });
       
