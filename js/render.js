@@ -9,7 +9,6 @@ const createEl = (tag, { className, text, html, attrs } = {}) => {
   if (attrs) Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
   return el;
 };
-
 const renderArticle = ({
   id,
   titre_fr,
@@ -64,7 +63,7 @@ const renderArticle = ({
   return card;
 };
 
-const renderCitation = ({ id, texte_ar, texte_fr }) => {
+const renderCitation = ({ id, texte_ar, texte_fr, explication }) => {
   const card = createEl('article', {
     className: 'card card-citation',
     attrs: { id, 'data-type': 'citation' },
@@ -77,6 +76,13 @@ const renderCitation = ({ id, texte_ar, texte_fr }) => {
     attrs: { dir: 'rtl', lang: 'ar' },
   }));
   inner.appendChild(createEl('p', { className: 'citation-traduction', html: texte_fr }));
+  
+  if (explication) {
+    const explicationContainer = createEl('div', { className: 'citation-explication' });
+    explicationContainer.appendChild(createEl('strong', { text: 'Explication : ' }));
+    explicationContainer.appendChild(createEl('span', { html: explication }));
+    inner.appendChild(explicationContainer);
+  }
 
   card.appendChild(inner);
   applyManuscriptEffect(inner);
