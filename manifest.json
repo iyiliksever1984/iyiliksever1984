@@ -8,5 +8,19 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#8f2f23",
-  "background_color": "#f5f1e8"
+  "background_color": "#f5f1e8",
+  "icons": [
+    {
+      "src": "assets/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
