@@ -1,6 +1,6 @@
 {
   "name": "Orhan Oğlu",
-  "short_name": "Orhan Oğlu",
+  "short_name": "OOğ",
   "icons": [
     {
       "src": "/assets/favicon/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ecd6aa",
-  "background_color": "#ecd6aa",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }

@@ -128,11 +128,12 @@ const renderLivre = ({
   if (annee) meta.appendChild(createEl('p', { className: 'livre-annee', text: annee }));
   intro.appendChild(meta);
   hero.appendChild(intro);
-  inner.appendChild(hero);
 
   if (biographie_auteur_fr) {
-    inner.appendChild(createEl('p', { className: 'livre-biographie', text: biographie_auteur_fr }));
+    hero.appendChild(createEl('p', { className: 'livre-biographie', text: biographie_auteur_fr }));
   }
+
+  inner.appendChild(hero);
 
   if (extraits && extraits.length) {
     const introExtraits = createEl('p', { className: 'livre-extraits-intro', text: 'Voici quelques extraits :' });

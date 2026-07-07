@@ -178,26 +178,27 @@
 }
 
 .livre-hero {
-  display: grid;
-  grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
-  gap: var(--sp-lg);
-  align-items: center;
+  display: block;
   background: var(--c-surface);
   padding: var(--sp-lg);
   border-radius: var(--radius-md);
+  margin-block-end: var(--sp-lg);
+}
+
+.livre-hero::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .livre-intro {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-sm);
-  min-width: 0;
+  display: block;
 }
 
 .livre-couverture {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+  float: left;
+  margin: 0 var(--sp-lg) var(--sp-md) 0;
+  max-width: 40%;
 }
 
 .livre-couverture img {
@@ -208,11 +209,9 @@
 }
 
 .livre-meta {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-xs);
-  align-items: flex-start;
+  display: block;
   text-align: left;
+  margin-block-end: var(--sp-md);
 }
 
 .livre-titre {
@@ -230,25 +229,27 @@
 }
 
 .livre-auteur {
+  display: block;
   font-size: var(--fs-base);
   color: var(--c-text-muted);
   font-weight: var(--fw-semibold);
   font-style: italic;
+  margin-block-end: var(--sp-2xs);
 }
 
 .livre-annee {
+  display: block;
   font-size: var(--fs-base);
   color: var(--c-text-muted);
   font-style: italic;
+  margin-block-end: var(--sp-2xs);
 }
 
 .livre-biographie {
   font-size: var(--fs-base);
   line-height: var(--lh-body);
   color: var(--c-text);
-  background: var(--c-surface);
-  padding: var(--sp-lg);
-  border-radius: var(--radius-md);
+  margin-block-start: var(--sp-md);
 }
 
 .livre-extraits-intro {
@@ -899,22 +900,17 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 760px) {
-  .livre-hero {
-    grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
-    gap: var(--sp-md);
+  .card-inner {
+    padding-top: 96px;
   }
 
   .livre-couverture {
-    align-self: start;
+    max-width: 45%;
+    margin: 0 var(--sp-md) var(--sp-sm) 0;
   }
 
   .livre-couverture img {
     max-height: 32dvh;
-  }
-
-  .livre-meta {
-    align-items: flex-start;
-    text-align: left;
   }
 }
 
@@ -928,7 +924,7 @@ input:checked + .slider:before {
   flex-direction: column;
   transform: translateY(-100%);
   transition: transform var(--transition-normal), opacity var(--transition-normal);
-  padding: var(--sp-2xl) var(--sp-md);
+  padding: 80px var(--sp-md) var(--sp-md);
   opacity: 0;
   pointer-events: none;
 }
