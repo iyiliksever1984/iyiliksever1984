@@ -66,3 +66,76 @@ body {
   width: var(--w-page);
   margin-inline: auto;
 }
+
+/* === PRINT STYLES === */
+@media print {
+  *, *::before, *::after {
+    overflow: visible !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  html, body {
+    height: auto !important;
+    min-height: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    background: white !important;
+    color: black !important;
+  }
+  .menu-sidebar,
+  .btn-hamburger,
+  .floating-actions-top,
+  .floating-actions-bottom,
+  .theme-switch-wrapper,
+  .install-wrapper,
+  .list-overlay,
+  .search-overlay,
+  .menu-overlay,
+  .toast {
+    display: none !important;
+  }
+  .flux,
+  .card,
+  .card-inner,
+  .card-body,
+  .bloc-bilingue,
+  .livre-extraits,
+  .livre-extrait,
+  .article-extraits,
+  .article-extrait {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    position: static !important;
+  }
+  .card-article .card-inner,
+  .card-livre .card-inner,
+  .card-citation .card-inner {
+    padding: 0 !important;
+  }
+  .card-header {
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  .livre-extrait,
+  .article-extrait,
+  .citation-arabe,
+  .extrait-ar {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1.5rem !important;
+  }
+  p, h1, h2, h3, h4, h5, blockquote {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+}

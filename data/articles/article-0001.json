@@ -2,7 +2,7 @@
   "id": "article-0001",
   "type": "article",
   "longueur": "long",
-  "titre_fr": "Le placement des mains sur la poitrine",
+  "titre_fr": "Mettre ses mains sur la poitrine",
   "titre_ar": "وضع اليدين على الصدر",
   "extraits": [
     {
@@ -18,8 +18,12 @@
       "texte_fr": "❁ Le Qadi Ibn Hubayrah, mort en 560 de l'hégire, a dit dans son ouvrage Ikhtilâf al-A'immah al-'Ulamâ' (La divergence des Imams savants) : « Ils ont divergé quant à l'emplacement précis où poser la main droite sur la main gauche :<br>Abou Hanîfa a dit : Il les place en dessous du nombril.<br>Mâlik et Ach-Châfi'î ont dit : Il les place sous sa poitrine et au-dessus de son nombril.<br>L'Imam Ahmad compte trois narrations (Riwâyât) à ce sujet : La plus célèbre correspond à la doctrine (Madhhab) d'Abou Hanîfa, et c'est l'avis choisi par Al-Khiraqî. La deuxième correspond à la doctrine de Mâlik et d'Ach-Châfi'î. La troisième laisse le libre choix entre les deux [positions], considérant qu'elles sont de mérite égal au niveau de la vertu. »"
     },
     {
+      "texte_ar": "",
+      "texte_fr": "Note : Aucun d'entre eux n'a cité 'Sur la poitrine' jusqu'à présent... "
+    },
+    {
       "texte_ar": "❁ الزيادة [على صدره] في الحديث شاذة",
-      "texte_fr": "❁ L'ajout [des termes « sur sa poitrine »] dans le hadith est marginal (châdh)."
+      "texte_fr": "❁ L'ajout des termes « sur sa poitrine » dans le hadith est marginal (châdh)."
     },
     {
       "texte_ar": "❁ قال الإمام ابن مفلح ويكره وضعهما على الصدر نص عليه مع أنه رواه أحمد انتهى كلامه من كتاب الفروع.",
@@ -35,11 +39,11 @@
     },
     {
       "texte_ar": "❁ وقال الحافظ القاسم بن قطلوبغا في تخريج أحاديث الاختيار شرح المختار: هذا سند جيد.",
-      "texte_fr": "❁ Le Hâfidh Al-Qâsim ibn Qutlûbughâ a dit dans son ouvrage d'authentification Takhrîj Ahâdîth Al-Ikhtiyâr charh Al-Mukhtâr :<br>« C'est une bonne chaîne de transmission (Sanad Jayyid). »"
+      "texte_fr": "❁ Le Hâfidh Al-Qâsim ibn Qutlûbughâ a dit dans son ouvrage d'authentification Takhrîj Ahâdîth Al-Ikhtiyâr charh Al-Mukhtâr :<br>« C'est une bonne chaîne de transmission (Sanad Jayyid). » (Pour la version du hadith en dessous du nombril)"
     },
     {
       "texte_ar": "❁ وقال أبو الطيب المدني في شرح الترمذي: هذا حديث قوي من حيث السند",
-      "texte_fr": "❁ Abou At-Tayyib Al-Madanî a dit dans son commentaire des Sounan d'At-Tirmidhî : « C'est un hadith fort (Qawî) du point de vue de sa chaîne de transmission. »"
+      "texte_fr": "❁ Abou At-Tayyib Al-Madanî a dit dans son commentaire des Sounan d'At-Tirmidhî : « C'est un hadith fort (Qawî) du point de vue de sa chaîne de transmission. » (Pour la version du hadith en dessous du nombril)"
     },
     {
       "texte_ar": "❁ قال الإمام السهارنفوري في بذل المجهود شرح سنن أبي داود: ولم يوجد مذهب من مذاهب المسلمين أن يكون الوضع على الصدر. فقول الوضع على الصدر قول خارج من مذاهب المسلمين وخارق لإجماعهم.",

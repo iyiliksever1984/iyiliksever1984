@@ -13,7 +13,7 @@
 .card-inner {
   max-width: var(--w-page);
   margin-inline: auto;
-  padding: var(--sp-xl) var(--sp-lg);
+  padding: var(--sp-xl) var(--sp-lg) calc(var(--sp-xl) + 80px) var(--sp-lg);
 }
 
 /* === CARTE — Article === */
