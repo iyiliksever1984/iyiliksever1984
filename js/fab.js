@@ -1,4 +1,5 @@
 import { getCards } from './store.js';
+import { shuffleArray } from './shuffle.js';
 
 const initFab = (displayCardFn) => {
   const btnHome = document.getElementById('btn-home');
@@ -8,7 +9,7 @@ const initFab = (displayCardFn) => {
 
   if (btnHome && listOverlay) {
     btnHome.addEventListener('click', () => {
-      const cards = getCards();
+      const cards = shuffleArray(getCards());
       
       let html = `
         <div class="list-header">
@@ -21,17 +22,29 @@ const initFab = (displayCardFn) => {
       `;
       
       cards.forEach(card => {
-        let title = card.titre_fr || card.titre || 'Citation';
-        if (card.type === 'citation' && card.texte_fr) {
-           const temp = document.createElement('div');
-           temp.innerHTML = card.texte_fr;
-           title = temp.textContent.trim().substring(0, 50) + '...';
+        let titleFr = card.titre_fr || card.titre || '';
+        let titleAr = card.titre_ar || '';
+        
+        if (card.type === 'citation') {
+           if (card.texte_fr) {
+             const tempFr = document.createElement('div');
+             tempFr.innerHTML = card.texte_fr;
+             titleFr = tempFr.textContent.trim().substring(0, 50) + '...';
+           }
+           if (card.texte_ar) {
+             const tempAr = document.createElement('div');
+             tempAr.innerHTML = card.texte_ar;
+             titleAr = tempAr.textContent.trim().substring(0, 50) + '...';
+           }
         }
+        
+        let contentHtml = '';
+        if (titleFr) contentHtml += `<div class="list-item-title">${titleFr}</div>`;
+        if (titleAr) contentHtml += `<div class="list-item-title" style="font-family: var(--font-arabe); direction: rtl; text-align: center; margin-top: 8px;">${titleAr}</div>`;
         
         html += `
           <button class="list-item" data-id="${card.id}">
-            <div class="list-item-title">${title}</div>
-            <div class="list-item-type">${card.type}</div>
+            ${contentHtml}
           </button>
         `;
       });
@@ -89,6 +102,13 @@ const initFab = (displayCardFn) => {
         const { shareCard } = await import('./share.js');
         shareCard({ id, titre: title });
       }
+    });
+  }
+
+  const btnPrint = document.getElementById('btn-print');
+  if (btnPrint) {
+    btnPrint.addEventListener('click', () => {
+      window.print();
     });
   }
 
