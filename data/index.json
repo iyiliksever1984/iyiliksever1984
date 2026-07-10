@@ -1,6 +1,25 @@
 [
   "articles/article-0001.json",
   "articles/article-0002.json",
+  "articles/article-0003.json",
+  "articles/article-0004.json",
+  "articles/article-0005.json",
+  "articles/article-0006.json",
+  "articles/article-0007.json",
+  "articles/article-0008.json",
+  "articles/article-0009.json",
+  "articles/article-0010.json",
+  "articles/article-0011.json",
+  "articles/article-0012.json",
+  "articles/article-0013.json",
+  "articles/article-0014.json",
+  "articles/article-0015.json",
   "livres/livre-0001.json",
-  "citations/citation-0001.json"
+  "citations/citation-0001.json",
+  "citations/citation-0002.json",
+  "citations/citation-0003.json",
+  "citations/citation-0004.json",
+  "citations/citation-0005.json",
+  "citations/citation-0006.json",
+  "citations/citation-0007.json"
 ]
