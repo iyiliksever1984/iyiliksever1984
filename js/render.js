@@ -36,7 +36,7 @@ const renderArticle = ({
 
   if (extraits && extraits.length) {
     const ul = createEl('ul', { className: 'livre-extraits article-extraits' });
-    extraits.forEach(({ texte_ar: ar, texte_fr: fr }) => {
+    extraits.forEach(({ texte_ar: ar, texte_fr: fr, explication }) => {
       const li = createEl('li', { className: 'livre-extrait article-extrait' });
       if (ar) {
         li.appendChild(createEl('blockquote', {
@@ -48,6 +48,12 @@ const renderArticle = ({
       if (fr) {
         li.appendChild(createEl('p', { className: 'extrait-fr', html: fr }));
         fullFrenchText += ' ' + fr;
+      }
+      if (explication) {
+        const explicationContainer = createEl('div', { className: 'citation-explication' });
+        explicationContainer.appendChild(createEl('strong', { text: 'Explication : ' }));
+        explicationContainer.appendChild(createEl('span', { html: explication }));
+        li.appendChild(explicationContainer);
       }
       ul.appendChild(li);
     });
