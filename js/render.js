@@ -136,7 +136,7 @@ const renderLivre = ({
   hero.appendChild(intro);
 
   if (biographie_auteur_fr) {
-    hero.appendChild(createEl('p', { className: 'livre-biographie', text: biographie_auteur_fr }));
+    hero.appendChild(createEl('p', { className: 'livre-biographie', html: biographie_auteur_fr }));
   }
 
   inner.appendChild(hero);

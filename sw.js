@@ -1,4 +1,4 @@
-const CACHE_NAME = 'orhan-oglu-v3';
+const CACHE_NAME = 'orhan-oglu-v4';
 
 // Fichiers vitaux à mettre en cache immédiatement (App Shell)
 const STATIC_ASSETS = [
