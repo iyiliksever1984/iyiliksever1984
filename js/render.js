@@ -130,8 +130,8 @@ const renderLivre = ({
       attrs: { dir: 'rtl', lang: 'ar' },
     }));
   }
-  if (auteur) meta.appendChild(createEl('p', { className: 'livre-auteur', text: auteur }));
-  if (annee) meta.appendChild(createEl('p', { className: 'livre-annee', text: annee }));
+  if (auteur) meta.appendChild(createEl('p', { className: 'livre-auteur', html: auteur }));
+  if (annee) meta.appendChild(createEl('p', { className: 'livre-annee', html: annee }));
   intro.appendChild(meta);
   hero.appendChild(intro);
 

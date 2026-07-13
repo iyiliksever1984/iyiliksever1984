@@ -1036,4 +1036,32 @@ input:checked + .slider:before {
 .btn-install svg {
   width: 28px;
   height: 28px;
+/* === UTILITAIRES ET ILLUSTRATIONS === */
+.text-accent {
+  color: var(--c-accent);
+}
+
+.figure-illustration {
+  margin-block: var(--sp-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-sm);
+}
+
+.img-illustration {
+  max-width: 100%;
+  width: 380px; /* Limite absolue pour empêcher l'image d'être énorme */
+  height: auto;
+  border-radius: var(--radius-sm);
+  background-color: #fff;
+  padding: var(--sp-xs);
+  box-shadow: 0 4px 12px var(--c-shadow);
+}
+
+.figcaption-illustration {
+  font-size: var(--fs-sm);
+  color: var(--c-text-muted);
+  font-style: italic;
+  text-align: center;
 }

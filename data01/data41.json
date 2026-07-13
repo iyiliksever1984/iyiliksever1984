@@ -1,0 +1,20 @@
+{
+  "id": "livre-0041",
+  "type": "livre",
+  "titre_fr": "Le vêtement mélangé à de la soie",
+  "titre_ar": "حكم لبس الثياب المخلوطة بالحرير",
+  "auteur": "Tiré de <span class=\"text-accent\">Zad</span> al-Mustaqni'",
+  "annee": "Explication extraite de <strong>Ar-Rawd Al-Mourbi'</strong>",
+  "image_couverture": "./assets/images/image1.jpg",
+  "biographie_auteur_fr": "<strong>💡 Explication simplifiée :</strong><br>Le critère d'interdiction pour un vêtement mélangé n'est pas le poids de la soie, mais son <strong>apparence</strong>. Lors du tissage d'un vêtement, on croise des fils verticaux appelés fils de chaîne (خيط السدى - Khayt as-Sada) et des fils horizontaux appelés fils de trame (خيط اللحمة - Khayt al-Lahma). Si la soie est la matière la plus visible à l'œil nu, le vêtement est interdit pour les hommes, même si en terme de poids, il y a plus de coton.",
+  "extraits": [
+    {
+      "texte_ar": "❁ (وَتَحْرُمُ ثِيَابُ حَرِيرٍ، وَ) يحرم (مَا) أي ثوب (هُوَ) أي الحرير (أَكْثَرُهُ ظُهُورًا) مِمَّا نُسِجَ مَعَهُ.",
+      "texte_fr": "❁ (Il est interdit) pour les hommes (de porter des vêtements en soie, et) il est interdit de porter (tout vêtement dont elle) c'est-à-dire la soie (est la matière la plus apparente) parmi les fils avec lesquels il a été tissé."
+    },
+    {
+      "texte_ar": "❁ فالثوب إما أن يكون من الحرير خالصًا، وإما أن يكون من الحرير وغيره؛ فإن كان خالصًا فلا إشكال في تحريمه، وإن كان معه غيره من قطن أو صوف أو كتان فإن كان الحرير ظاهرًا بأن يكون غالبًا حرم أيضًا، وإن كان نادرًا أبيح، وإن كان مساويًا في الظهور كُره.",
+      "texte_fr": "❁ Le vêtement est donc soit en soie pure, soit mélangé à une autre matière. S'il est en soie pure, son interdiction est évidente. S'il est mélangé avec du coton, de la laine ou du lin :<br>1. Si la soie est <strong>dominante</strong> en apparence, il est interdit.<br>2. Si elle est <strong>rare</strong> (minoritaire en apparence), il est permis.<br>3. Si les deux matières sont <strong>égales</strong> en apparence, il est détestable (Makrouh)."
+    }
+  ]
+}
