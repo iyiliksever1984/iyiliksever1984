@@ -1,0 +1,24 @@
+{
+  "id": "livre-0001",
+  "type": "livre",
+  "titre_fr": "La supériorité des chiens sur beaucoup de ceux qui portent des vêtements",
+  "titre_ar": "فضل الكلاب على كثير ممن لبس الثياب",
+  "auteur": "De Imam Abou Bakr ibn Khalaf al-Marzuban",
+  "annee": "mort en l'an 309 de l'hégire",
+  "image_couverture": "./assets/images/livres/0001.jpg",
+  "biographie_auteur_fr": "Mohammad ibn Khalaf ibn al-Marzuban ibn Bassam (Abû Bakr al-Mahwallî), décédé en 309 H (921 ap. J.-C.). Historien, traducteur et érudit en littérature. Il était originaire d'al-Mahwal, un village à l'ouest de Bagdad. Il a traduit plus de cinquante livres persans et est l'auteur de nombreux ouvrages. L'imam Adh-Dhahabî, dans Siyar A'lam an-Nubala', le mentionne comme élève d'Ibn Abî ad-Dunyâ et le décrit comme un transmetteur digne de confiance.",
+  "extraits": [
+    {
+      "texte_ar": "قال إني أراه أوفى ذمامًا ❁ من كثيرٍ عرفتُ في الإخوان<br>وأمينَ المغيبِ يلقى بوجهٍ ❁ ولقومٍ من الورى وجهان",
+      "texte_fr": "«❁ Le chien est plus fidèle à ses engagements que beaucoup de ceux que j'ai connus parmi mes \"frères\" ... digne de confiance en ton absence, il t'accueille avec un seul visage, alors que bien des gens en ont deux (ils sont hypocrites). »"
+    },
+    {
+      "texte_ar": "❁ قال الأحنف بن قيس: إذا بصبص الكلب لك فثق بود منه ولا تثق ببصابص الناس، فرب مبصبص خوان.",
+      "texte_fr": "❁ Al-Ahnaf ibn Qays a dit : « Si le chien remue la queue pour toi, crois à son affection. Ne te fie pas aux démonstrations des hommes : combien de flatteurs sont des traîtres. »"
+    },
+    {
+      "texte_ar": "❁ قال: كان للأعمش كلبٌ يتبعه في الطريق إذا مشى حتى يرجع. فقيل له في ذلك، فقال: رأيت صبياناً يضربونه ففرقتُ بينهم وبينه فعرف ذلك لي فشكرَهُ. فإذا رآني بصبص لي وتتبَّعني.",
+      "texte_fr": "❁ L'Imam Al-A'mash avait un chien qui le suivait sur le chemin lorsqu'il sortait, jusqu'à son retour. On l'interrogea à ce sujet et il répondit : « J'ai vu des enfants le frapper un jour, alors je me suis interposé pour le défendre. Il l'a reconnu et m'en fut reconnaissant. Désormais, dès qu'il me voit, il remue la queue et me suit. »"
+    }
+  ]
+}
