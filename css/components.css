@@ -137,6 +137,7 @@
   color: var(--c-text);
   font-style: normal;
   direction: rtl;
+  text-align: right;
   letter-spacing: 0;
   background: var(--c-surface);
   padding: var(--sp-lg);
@@ -149,6 +150,8 @@
   color: var(--c-text);
   line-height: var(--lh-body);
   padding-inline: var(--sp-md);
+  text-align: left;
+  width: 100%;
 }
 
 .citation-explication {
