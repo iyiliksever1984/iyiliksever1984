@@ -40,7 +40,17 @@ const init = async () => {
   try {
     const cards = await fetchAllCards();
     setCards(cards);
-    displayCard(); // Afficher une carte au hasard au démarrage
+
+    // Vérifier si un ID est présent dans l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const sharedId = urlParams.get('id');
+
+    if (sharedId) {
+      displayCard(sharedId);
+    } else {
+      displayCard(); // Afficher une carte au hasard au démarrage
+    }
+
     initFab(displayCard);
     initSearch(displayCard);
   } catch (error) {
